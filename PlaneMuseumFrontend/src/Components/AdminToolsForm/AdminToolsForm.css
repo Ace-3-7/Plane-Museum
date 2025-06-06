@@ -1,0 +1,59 @@
+body, html {
+  height: 100%;
+  font-family: "Share Tech", sans-serif;
+}
+
+.start-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.AdminToolsFormWrapper {
+  height: 100vh;
+  width: 100vw;
+  margin: 40px auto;
+  border-radius: 12px;
+}
+
+.AdminToolsForm {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.AdminToolsForm th {
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  text-indent: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.AdminToolsForm tr {
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: left;
+  text-indent: 10px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.optionButtons button {
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}

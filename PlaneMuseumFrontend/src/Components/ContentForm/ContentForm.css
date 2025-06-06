@@ -1,0 +1,149 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000; 
+}
+
+.contentPage {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000; 
+  overflow: hidden; 
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
+  z-index: 1; 
+}
+
+.darkeningOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65); 
+  z-index: 2; 
+  pointer-events: none; 
+}
+
+.contentForeground {
+  position: relative;
+  z-index: 3; 
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  min-height: calc(100vh - 80px); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loading-page-full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5em;
+  background-color: #000; 
+  color: white;
+  position: fixed; 
+  top:0; left:0; width:100%; height:100%;
+  z-index: 9999;
+}
+
+
+.recordCard {
+  color: #ffffff;
+  padding: 30px;
+  margin: auto auto; 
+  width: 100vw;
+  height: 75vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
+  text-align: justify;
+  font-size: x-large; 
+  line-height: 1.8; 
+  background-color: rgba(20, 20, 20, 0.5); 
+  flex-grow: 1; 
+}
+
+.recordCard button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: #001dac;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.recordCard button:hover {
+  background-color: #222;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px; 
+}
+
+.navButtons button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navButtons button:hover:enabled {
+  background-color: #222;
+}
+
+.navButtons button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.accButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 20px; 
+  margin-right: 20px;
+  align-items: center; 
+}
+
+.accButtons button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accButtons button:hover {
+  background-color: #222;
+}
+
