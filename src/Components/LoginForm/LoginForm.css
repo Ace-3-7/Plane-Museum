@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../Assets/sr71crop.png');
+  background-size: cover;
+  -moz-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  font-family: "Share Tech", sans-serif;
+}
+
+body::before{
+   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 60% black */
+  z-index: 0;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+
+.loginDesign {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginDesign h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+  font-size: 32px;
+}
+
+.input-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+
+button[type="btn-login"] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #808080;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="btn-login"]:hover {
+  background-color: #3f3f3f;
+}
+
+.register-prompt {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-prompt a {
+  color: #383838;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-prompt a:hover {
+  text-decoration: underline;
+}
