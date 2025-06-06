@@ -1,0 +1,19 @@
+# This is a Docker Compose file that sets up a PostgreSQL database service.
+  services:
+    postgres:
+      image: 'postgres:latest'
+      environment:
+        - 'POSTGRES_DB=PlaneMuseum'
+        - 'POSTGRES_PASSWORD=123'
+        - 'POSTGRES_USER=user'
+      ports:
+        - '5432'
+    pgadmin:
+      container_name: pgadmin
+      image: 'dpage/pgadmin4:latest'
+      environment:
+        PGADMIN_DEFAULT_EMAIL: admin@localhost.com
+        PGADMIN_DEFAULT_PASSWORD: admin
+        PGADMIN_LISTEN_PORT: 5050
+      ports:
+        - '5050:5050'
